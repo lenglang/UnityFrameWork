@@ -1,0 +1,33 @@
+public LayerMask mask;
+ 
+public Camera _camera;
+ 
+void Start（）
+ 
+{
+ 
+mask =-1《LayerMask.NameToLayer（“L2”）；    //从L2层开始以下
+ 
+}
+ 
+void Update（） {
+ 
+if （Input.GetMouseButtonDown（0））
+ 
+{
+ 
+Ray ray = _camera.ScreenPointToRay（Input.mousePosition）；   //发射射线
+ 
+RaycastHit hit;
+ 
+if （Physics.Raycast（ray,out hit,500,mask.value））                                                           //如果射线撞到物体
+ 
+{
+ 
+Debug.Log（hit.collider.name ）；
+ 
+}
+ 
+}
+ 
+}

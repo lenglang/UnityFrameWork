@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{3C32026C-4DCE-4A8B-C2BE-CCA7A2DB21FD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_6;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\SPT_PathDrawing\Core Assets\Scripts\DestinationObject.cs" />
+     <Compile Include="Assets\Plugins\SPT_PathDrawing\Core Assets\Scripts\PathFollower.cs" />
+     <Compile Include="Assets\Plugins\SPT_PathDrawing\Core Assets\Scripts\PathInputManager.cs" />
+     <Compile Include="Assets\Plugins\SPT_PathDrawing\Example Scene Assets\Scripts\Mover.cs" />
+     <Compile Include="Assets\Plugins\SPT_PathDrawing\Example Scene Assets\Scripts\VectorXZ.cs" />
+     <Compile Include="Assets\Plugins\SPT_PathDrawing\Example Scene Assets\Scripts\Walker.cs" />
+     <None Include="Assets\WZK\Scripts\DoTween\DOTweenPro\readme.txt" />
+     <None Include="Assets\WZK\Scripts\DoTween\用法\DoTween使用.txt" />
+     <None Include="Assets\WZK\知识点\unity3d中连接数据库.txt" />
+     <None Include="Assets\WZK\知识点\设置材质颜色.txt" />
+     <None Include="Assets\WZK\Scripts\Shader\Grey.shader" />
+     <None Include="Assets\WZK\知识点\3D拾取.txt" />
+     <None Include="Assets\WZK\Scripts\DoTween\DOTween\DOTween50.xml" />
+     <None Include="Assets\WZK\Scripts\Shader\Shader替换.txt" />
+     <None Include="Assets\WZK\知识点\UGUI忽略UI被拦截事件.txt" />
+     <None Include="Assets\WZK\知识点\带碰撞检测的摄像机.txt" />
+     <None Include="Assets\WZK\知识点\去除结尾换行警告.txt" />
+     <None Include="Assets\WZK\注意事项\优化方案.txt" />
+     <None Include="Assets\WZK\知识点\动态更新烘培贴图.txt" />
+     <None Include="Assets\WZK\知识点\判断是否有敌人的3种方法.txt" />
+     <None Include="Assets\WZK\知识点\改变物体透明.txt" />
+     <None Include="Assets\WZK\Scripts\DoTween\DOTween\DOTween46.xml" />
+     <None Include="Assets\WZK\Scripts\DoTween\DemiLib\DemiLib.xml" />
+     <None Include="Assets\WZK\知识点\FPS射击游戏准星抖动代码.txt" />
+     <None Include="Assets\WZK\知识点\1常用知识.txt" />
+     <None Include="Assets\WZK\知识点\富文本.txt" />
+     <None Include="Assets\WZK\知识点\本地调用摄像头.txt" />
+     <None Include="Assets\WZK\Scripts\DoTween\DOTween\readme.txt" />
+     <None Include="Assets\WZK\知识点\用指定图片替换鼠标指针.txt" />
+     <None Include="Assets\WZK\知识点\DoTween改变值.txt" />
+     <None Include="Assets\WZK\Scripts\DoTween\DOTween\DOTween43.xml" />
+     <None Include="Assets\WZK\知识点\射线碰撞（屏蔽掉不想要的层）.txt" />
+     <None Include="Assets\WZK\知识点\物体摄像机范围，可见，不可见设置.txt" />
+     <None Include="Assets\WZK\知识点\unity 退到桌面的 OnApplicationPause.txt" />
+     <None Include="Assets\WZK\Scripts\NotificationManager\Example.txt" />
+     <None Include="Assets\WZK\知识点\unity3d 触屏多点触控（旋转与缩放）.txt" />
+     <None Include="Assets\WZK\知识点\烘焙寻路.txt" />
+     <None Include="Assets\WZK\知识点\改变特效透明.txt" />
+     <None Include="Assets\Plugins\SPT_PathDrawing\readme - v1.0.1.txt" />
+     <None Include="Assets\WZK\知识点\镜子效果（影子）脚本.txt" />
+     <None Include="Assets\WZK\Scripts\DoTween\readme_DOTweenPro.txt" />
+     <None Include="Assets\WZK\知识点\窗口编辑制作.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="DebugBuild">
+ <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/Dll/DebugBuild.dll</HintPath>
+ </Reference>
+ <Reference Include="Excel">
+ <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/Dll/Excel.dll</HintPath>
+ </Reference>
+ <Reference Include="ICSharpCode.SharpZipLib">
+ <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/Dll/ICSharpCode.SharpZipLib.dll</HintPath>
+ </Reference>
+ <Reference Include="LitJson">
+ <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/Dll/LitJson.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data">
+ <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/Dll/System.Data.dll</HintPath>
+ </Reference>
+ <Reference Include="DemiLib">
+ <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/DoTween/DemiLib/DemiLib.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/DoTween/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween43">
+ <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/DoTween/DOTween/DOTween43.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween46">
+ <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/DoTween/DOTween/DOTween46.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween50">
+ <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/DoTween/DOTween/DOTween50.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenPro">
+ <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/DoTween/DOTweenPro/DOTweenPro.dll</HintPath>
+ </Reference>
+ <Reference Include="zxing.unity">
+ <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/QR_Code/zxing.unity.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
