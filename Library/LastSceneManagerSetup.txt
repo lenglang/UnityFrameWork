@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/WZK/Scenes/Test.unity
+- path: "Assets/WZK/\u529F\u80FD\u6848\u4F8B/3D\u5207\u6C34\u679C/Examples/UvMapping/UvMapping.unity"
   isLoaded: 1
   isActive: 1
