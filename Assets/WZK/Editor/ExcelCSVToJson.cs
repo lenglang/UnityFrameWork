@@ -7,7 +7,7 @@ using SimpleJSON;
 
 public class ExcelToJson{
 
-	[MenuItem("小工具/ExcelToJson")]
+	[MenuItem("小工具/ExcelCSVToJson")]
 	static void excelToJson()
 	{
 		string dataFolderPath=Application.dataPath+"/WZK/Scripts/ExcelToJson/Data";

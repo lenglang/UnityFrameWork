@@ -47,6 +47,7 @@ public class RotateGestures : MonoBehaviour
         currentDragDir = (startPos - targetPos).normalized;
         previousDragDir = currentDragDir;
         startDragAngle = this.transform.localEulerAngles;
+		angle = 0;
         if (onBeginDrag != null) onBeginDrag();
     }
     /// <summary>
@@ -118,5 +119,6 @@ public class RotateGestures : MonoBehaviour
         EventTriggerListener.Get(gameObject).onEndDrag = null;
         onRotateAngle = null;
         onEndDrag = null;
+		onBeginDrag = null;
     }
 }
