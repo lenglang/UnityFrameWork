@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{41ECE136-64D4-326F-1760-02A6937F73AB}</ProjectGuid>
+    <ProjectGuid>{C7B538C6-B2B3-0CDB-00EB-5326D05BA8B7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -47,7 +47,9 @@
   <ItemGroup>
      <Compile Include="Assets\WZK\Editor\AssetBundleCreate.cs" />
      <Compile Include="Assets\WZK\Editor\AudioWindowEditor.cs" />
-     <Compile Include="Assets\WZK\Editor\ExcelToJson.cs" />
+     <Compile Include="Assets\WZK\Editor\ExcelCSVToJson.cs" />
+     <Compile Include="Assets\WZK\Editor\ExcelTools.cs" />
+     <Compile Include="Assets\WZK\Editor\ExcelUtility.cs" />
      <Compile Include="Assets\WZK\Editor\FindReferences.cs" />
      <Compile Include="Assets\WZK\Editor\ResourceCompress.cs" />
      <Compile Include="Assets\WZK\Editor\Scripts\AudioManager.cs" />
@@ -55,12 +57,13 @@
      <Compile Include="Assets\WZK\Editor\Scripts\MyRangeAttributeDrawer.cs" />
      <Compile Include="Assets\WZK\Editor\UtilityEditor.cs" />
      <Compile Include="Assets\WZK\Scripts\DoTween\DOTweenPro\Editor\DOTweenAnimationInspector.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Core\Library\Editor\ShatterToolEditor.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Core\Library\Editor\ShatterToolEditor.cs" />
      <None Include="Assets\WZK\Scripts\DoTween\DOTweenPro\readme.txt" />
      <None Include="Assets\WZK\Scripts\DoTween\用法\DoTween使用.txt" />
      <None Include="Assets\WZK\知识点\unity3d中连接数据库.txt" />
-     <None Include="Assets\WZK\功能案例\切水果\Documentation\Readme.txt" />
+     <None Include="Assets\WZK\功能案例\3D切水果\Documentation\Readme.txt" />
      <None Include="Assets\WZK\Shader\Grey.shader" />
+     <None Include="Assets\WZK\注意事项\测试包存放路径.txt" />
      <None Include="Assets\WZK\知识点\3D拾取.txt" />
      <None Include="Assets\WZK\Scripts\DoTween\DOTween\DOTween50.xml" />
      <None Include="Assets\WZK\知识点\0.txt" />
@@ -75,8 +78,10 @@
      <None Include="Assets\WZK\知识点\判断是否有敌人的3种方法.txt" />
      <None Include="Assets\WZK\知识点\改变物体透明.txt" />
      <None Include="Assets\WZK\Scripts\DoTween\DOTween\DOTween46.xml" />
-     <None Include="Assets\WZK\功能案例\切水果\Examples\Scheduler\Note.txt" />
+     <None Include="Assets\WZK\功能案例\3D切水果\Examples\Scheduler\Note.txt" />
+     <None Include="Assets\WZK\Scripts\ExcelToJson\说明.txt" />
      <None Include="Assets\WZK\Scripts\DoTween\DemiLib\DemiLib.xml" />
+     <None Include="Assets\WZK\Resources\UserLevel.xml" />
      <None Include="Assets\WZK\知识点\FPS射击游戏准星抖动代码.txt" />
      <None Include="Assets\WZK\知识点\1常用知识.txt" />
      <None Include="Assets\WZK\知识点\富文本.txt" />
@@ -86,14 +91,14 @@
      <None Include="Assets\WZK\知识点\用指定图片替换鼠标指针.txt" />
      <None Include="Assets\WZK\知识点\DoTween改变值.txt" />
      <None Include="Assets\WZK\Scripts\DoTween\DOTween\DOTween43.xml" />
-     <None Include="Assets\WZK\知识点\射线碰撞（屏蔽掉不想要的层）.txt" />
      <None Include="Assets\WZK\知识点\物体摄像机范围，可见，不可见设置.txt" />
      <None Include="Assets\WZK\知识点\unity 退到桌面的 OnApplicationPause.txt" />
      <None Include="Assets\WZK\Scripts\Event\Example.txt" />
      <None Include="Assets\WZK\知识点\unity3d 触屏多点触控（旋转与缩放）.txt" />
      <None Include="Assets\WZK\知识点\烘焙寻路.txt" />
-     <None Include="Assets\WZK\功能案例\切水果\Examples\Shared Assets\Shaders\Simple.shader" />
-     <None Include="Assets\WZK\功能案例\切水果\Examples\Hierarchy\Note.txt" />
+     <None Include="Assets\WZK\功能案例\3D切水果\Examples\Shared Assets\Shaders\Simple.shader" />
+     <None Include="Assets\WZK\注意事项\更改包名存放路径.txt" />
+     <None Include="Assets\WZK\功能案例\3D切水果\Examples\Hierarchy\Note.txt" />
      <None Include="Assets\WZK\知识点\改变特效透明.txt" />
      <None Include="Assets\WZK\注意事项\框架使用.txt" />
      <None Include="Assets\WZK\知识点\SmartGit（试用期30后），个人继续使用的方法。.txt" />
@@ -125,50 +130,53 @@
  <Reference Include="UnityEditor.TreeEditor">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
  </Reference>
- <Reference Include="DebugBuild">
- <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/Dll/DebugBuild.dll</HintPath>
- </Reference>
- <Reference Include="Excel">
- <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/Dll/Excel.dll</HintPath>
- </Reference>
- <Reference Include="ICSharpCode.SharpZipLib">
- <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/Dll/ICSharpCode.SharpZipLib.dll</HintPath>
- </Reference>
- <Reference Include="LitJson">
- <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/Dll/LitJson.dll</HintPath>
- </Reference>
- <Reference Include="System.Data">
- <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/Dll/System.Data.dll</HintPath>
- </Reference>
  <Reference Include="DemiLib">
- <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/DoTween/DemiLib/DemiLib.dll</HintPath>
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/DoTween/DemiLib/DemiLib.dll</HintPath>
  </Reference>
  <Reference Include="DemiEditor">
- <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/DoTween/DemiLib/Editor/DemiEditor.dll</HintPath>
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/DoTween/DemiLib/Editor/DemiEditor.dll</HintPath>
  </Reference>
  <Reference Include="DOTween">
- <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/DoTween/DOTween/DOTween.dll</HintPath>
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/DoTween/DOTween/DOTween.dll</HintPath>
  </Reference>
  <Reference Include="DOTween43">
- <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/DoTween/DOTween/DOTween43.dll</HintPath>
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/DoTween/DOTween/DOTween43.dll</HintPath>
  </Reference>
  <Reference Include="DOTween46">
- <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/DoTween/DOTween/DOTween46.dll</HintPath>
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/DoTween/DOTween/DOTween46.dll</HintPath>
  </Reference>
  <Reference Include="DOTween50">
- <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/DoTween/DOTween/DOTween50.dll</HintPath>
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/DoTween/DOTween/DOTween50.dll</HintPath>
  </Reference>
  <Reference Include="DOTweenEditor">
- <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/DoTween/DOTween/Editor/DOTweenEditor.dll</HintPath>
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/DoTween/DOTween/Editor/DOTweenEditor.dll</HintPath>
  </Reference>
  <Reference Include="DOTweenPro">
- <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/DoTween/DOTweenPro/DOTweenPro.dll</HintPath>
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/DoTween/DOTweenPro/DOTweenPro.dll</HintPath>
  </Reference>
  <Reference Include="DOTweenProEditor">
- <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/DoTween/DOTweenPro/Editor/DOTweenProEditor.dll</HintPath>
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/DoTween/DOTweenPro/Editor/DOTweenProEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="DebugBuild">
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/Plugins/DebugBuild.dll</HintPath>
+ </Reference>
+ <Reference Include="Excel">
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/Plugins/Excel.dll</HintPath>
+ </Reference>
+ <Reference Include="ICSharpCode.SharpZipLib">
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/Plugins/ICSharpCode.SharpZipLib.dll</HintPath>
+ </Reference>
+ <Reference Include="LitJson">
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/Plugins/LitJson.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/Plugins/Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data">
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/Plugins/System.Data.dll</HintPath>
  </Reference>
  <Reference Include="zxing.unity">
- <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/QR_Code/zxing.unity.dll</HintPath>
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/QR_Code/zxing.unity.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
@@ -182,7 +190,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{904D1D99-857D-124D-BEF8-2131A655FE9D}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{81D0680C-1765-DD6B-EB15-2478FD3B96F2}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

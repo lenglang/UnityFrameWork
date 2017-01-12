@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{904D1D99-857D-124D-BEF8-2131A655FE9D}</ProjectGuid>
+    <ProjectGuid>{81D0680C-1765-DD6B-EB15-2478FD3B96F2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -83,6 +83,8 @@
      <Compile Include="Assets\WZK\Scripts\LianLianKan\LPoint.cs" />
      <Compile Include="Assets\WZK\Scripts\LianLianKan\Line.cs" />
      <Compile Include="Assets\WZK\Scripts\MicPhone\MicPhoneManager.cs" />
+     <Compile Include="Assets\WZK\Scripts\PersistentData\IOHelper.cs" />
+     <Compile Include="Assets\WZK\Scripts\PersistentData\PersistentTest.cs" />
      <Compile Include="Assets\WZK\Scripts\QR_Code\QR_Code.cs" />
      <Compile Include="Assets\WZK\Scripts\Shake\ShakeCamera.cs" />
      <Compile Include="Assets\WZK\Scripts\Sound\AudioClipExtension.cs" />
@@ -91,6 +93,7 @@
      <Compile Include="Assets\WZK\Scripts\Sound\SoundManager.cs" />
      <Compile Include="Assets\WZK\Scripts\TXT\TxtManager.cs" />
      <Compile Include="Assets\WZK\Scripts\Tool\DeviceInfo.cs" />
+     <Compile Include="Assets\WZK\Scripts\Tool\MathTool.cs" />
      <Compile Include="Assets\WZK\Scripts\Tool\MemoryPrefs.cs" />
      <Compile Include="Assets\WZK\Scripts\Tool\ShowFPS.cs" />
      <Compile Include="Assets\WZK\Scripts\Tool\SmoothFollow.cs" />
@@ -99,35 +102,35 @@
      <Compile Include="Assets\WZK\Scripts\UGUI\UGUI摇杆\JoystackCc.cs" />
      <Compile Include="Assets\WZK\Scripts\UGUI\UGUI摇杆\PlayerMoveControl.cs" />
      <Compile Include="Assets\WZK\Scripts\XML\XMLManager.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Core\Library\Common\Tools.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Core\Library\Hull\Edge.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Core\Library\Hull\EdgeHit.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Core\Library\Hull\FastHull.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Core\Library\Hull\HullType.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Core\Library\Hull\IHull.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Core\Library\Hull\LegacyHull.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Core\Library\Hull\Point.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Core\Library\Hull\Triangle.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Core\Library\Triangulator\ITriangulator.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Core\Library\Triangulator\Triangulator.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Core\Library\UvMapper\UvMapper.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Core\Main\ShatterTool.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Core\Main\TargetUvMapper.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Core\Main\WorldUvMapper.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Examples\Shared Assets\Scripts\MouseGUI.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Examples\Shared Assets\Scripts\SceneGUI.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Examples\Triangulator\OutlineCreator.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Examples\UvMapping\RotateRigidbody.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Helpers\Game Objects\HierarchyHandler.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Helpers\Game Objects\ShatterOnCollision.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Helpers\Mouse\MouseForce.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Helpers\Mouse\MouseInstantiate.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Helpers\Mouse\MouseShatter.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Helpers\Mouse\MouseSplit.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Helpers\Scheduler\Library\IShatterTask.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Helpers\Scheduler\Library\ShatterTask.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Helpers\Scheduler\Library\SplitTask.cs" />
-     <Compile Include="Assets\WZK\功能案例\切水果\Helpers\Scheduler\Main\ShatterScheduler.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Core\Library\Common\Tools.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Core\Library\Hull\Edge.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Core\Library\Hull\EdgeHit.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Core\Library\Hull\FastHull.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Core\Library\Hull\HullType.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Core\Library\Hull\IHull.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Core\Library\Hull\LegacyHull.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Core\Library\Hull\Point.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Core\Library\Hull\Triangle.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Core\Library\Triangulator\ITriangulator.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Core\Library\Triangulator\Triangulator.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Core\Library\UvMapper\UvMapper.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Core\Main\ShatterTool.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Core\Main\TargetUvMapper.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Core\Main\WorldUvMapper.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Examples\Shared Assets\Scripts\MouseGUI.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Examples\Shared Assets\Scripts\SceneGUI.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Examples\Triangulator\OutlineCreator.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Examples\UvMapping\RotateRigidbody.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Helpers\Game Objects\HierarchyHandler.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Helpers\Game Objects\ShatterOnCollision.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Helpers\Mouse\MouseForce.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Helpers\Mouse\MouseInstantiate.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Helpers\Mouse\MouseShatter.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Helpers\Mouse\MouseSplit.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Helpers\Scheduler\Library\IShatterTask.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Helpers\Scheduler\Library\ShatterTask.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Helpers\Scheduler\Library\SplitTask.cs" />
+     <Compile Include="Assets\WZK\功能案例\3D切水果\Helpers\Scheduler\Main\ShatterScheduler.cs" />
      <Compile Include="Assets\WZK\知识点\LINQ\Kongfu.cs" />
      <Compile Include="Assets\WZK\知识点\LINQ\MartialArtsMaster.cs" />
      <Compile Include="Assets\WZK\知识点\LINQ\Program.cs" />
@@ -149,8 +152,9 @@
      <None Include="Assets\WZK\Scripts\DoTween\DOTweenPro\readme.txt" />
      <None Include="Assets\WZK\Scripts\DoTween\用法\DoTween使用.txt" />
      <None Include="Assets\WZK\知识点\unity3d中连接数据库.txt" />
-     <None Include="Assets\WZK\功能案例\切水果\Documentation\Readme.txt" />
+     <None Include="Assets\WZK\功能案例\3D切水果\Documentation\Readme.txt" />
      <None Include="Assets\WZK\Shader\Grey.shader" />
+     <None Include="Assets\WZK\注意事项\测试包存放路径.txt" />
      <None Include="Assets\WZK\知识点\3D拾取.txt" />
      <None Include="Assets\WZK\Scripts\DoTween\DOTween\DOTween50.xml" />
      <None Include="Assets\WZK\知识点\0.txt" />
@@ -165,8 +169,10 @@
      <None Include="Assets\WZK\知识点\判断是否有敌人的3种方法.txt" />
      <None Include="Assets\WZK\知识点\改变物体透明.txt" />
      <None Include="Assets\WZK\Scripts\DoTween\DOTween\DOTween46.xml" />
-     <None Include="Assets\WZK\功能案例\切水果\Examples\Scheduler\Note.txt" />
+     <None Include="Assets\WZK\功能案例\3D切水果\Examples\Scheduler\Note.txt" />
+     <None Include="Assets\WZK\Scripts\ExcelToJson\说明.txt" />
      <None Include="Assets\WZK\Scripts\DoTween\DemiLib\DemiLib.xml" />
+     <None Include="Assets\WZK\Resources\UserLevel.xml" />
      <None Include="Assets\WZK\知识点\FPS射击游戏准星抖动代码.txt" />
      <None Include="Assets\WZK\知识点\1常用知识.txt" />
      <None Include="Assets\WZK\知识点\富文本.txt" />
@@ -176,14 +182,14 @@
      <None Include="Assets\WZK\知识点\用指定图片替换鼠标指针.txt" />
      <None Include="Assets\WZK\知识点\DoTween改变值.txt" />
      <None Include="Assets\WZK\Scripts\DoTween\DOTween\DOTween43.xml" />
-     <None Include="Assets\WZK\知识点\射线碰撞（屏蔽掉不想要的层）.txt" />
      <None Include="Assets\WZK\知识点\物体摄像机范围，可见，不可见设置.txt" />
      <None Include="Assets\WZK\知识点\unity 退到桌面的 OnApplicationPause.txt" />
      <None Include="Assets\WZK\Scripts\Event\Example.txt" />
      <None Include="Assets\WZK\知识点\unity3d 触屏多点触控（旋转与缩放）.txt" />
      <None Include="Assets\WZK\知识点\烘焙寻路.txt" />
-     <None Include="Assets\WZK\功能案例\切水果\Examples\Shared Assets\Shaders\Simple.shader" />
-     <None Include="Assets\WZK\功能案例\切水果\Examples\Hierarchy\Note.txt" />
+     <None Include="Assets\WZK\功能案例\3D切水果\Examples\Shared Assets\Shaders\Simple.shader" />
+     <None Include="Assets\WZK\注意事项\更改包名存放路径.txt" />
+     <None Include="Assets\WZK\功能案例\3D切水果\Examples\Hierarchy\Note.txt" />
      <None Include="Assets\WZK\知识点\改变特效透明.txt" />
      <None Include="Assets\WZK\注意事项\框架使用.txt" />
      <None Include="Assets\WZK\知识点\SmartGit（试用期30后），个人继续使用的方法。.txt" />
@@ -197,41 +203,44 @@
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
- <Reference Include="DebugBuild">
- <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/Dll/DebugBuild.dll</HintPath>
- </Reference>
- <Reference Include="Excel">
- <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/Dll/Excel.dll</HintPath>
- </Reference>
- <Reference Include="ICSharpCode.SharpZipLib">
- <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/Dll/ICSharpCode.SharpZipLib.dll</HintPath>
- </Reference>
- <Reference Include="LitJson">
- <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/Dll/LitJson.dll</HintPath>
- </Reference>
- <Reference Include="System.Data">
- <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/Dll/System.Data.dll</HintPath>
- </Reference>
  <Reference Include="DemiLib">
- <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/DoTween/DemiLib/DemiLib.dll</HintPath>
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/DoTween/DemiLib/DemiLib.dll</HintPath>
  </Reference>
  <Reference Include="DOTween">
- <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/DoTween/DOTween/DOTween.dll</HintPath>
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/DoTween/DOTween/DOTween.dll</HintPath>
  </Reference>
  <Reference Include="DOTween43">
- <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/DoTween/DOTween/DOTween43.dll</HintPath>
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/DoTween/DOTween/DOTween43.dll</HintPath>
  </Reference>
  <Reference Include="DOTween46">
- <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/DoTween/DOTween/DOTween46.dll</HintPath>
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/DoTween/DOTween/DOTween46.dll</HintPath>
  </Reference>
  <Reference Include="DOTween50">
- <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/DoTween/DOTween/DOTween50.dll</HintPath>
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/DoTween/DOTween/DOTween50.dll</HintPath>
  </Reference>
  <Reference Include="DOTweenPro">
- <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/DoTween/DOTweenPro/DOTweenPro.dll</HintPath>
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/DoTween/DOTweenPro/DOTweenPro.dll</HintPath>
+ </Reference>
+ <Reference Include="DebugBuild">
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/Plugins/DebugBuild.dll</HintPath>
+ </Reference>
+ <Reference Include="Excel">
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/Plugins/Excel.dll</HintPath>
+ </Reference>
+ <Reference Include="ICSharpCode.SharpZipLib">
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/Plugins/ICSharpCode.SharpZipLib.dll</HintPath>
+ </Reference>
+ <Reference Include="LitJson">
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/Plugins/LitJson.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/Plugins/Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data">
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/Plugins/System.Data.dll</HintPath>
  </Reference>
  <Reference Include="zxing.unity">
- <HintPath>D:/知识点/框架/FrameWork/Assets/WZK/Scripts/QR_Code/zxing.unity.dll</HintPath>
+ <HintPath>D:/SmartGit/UnityFrameWork/Assets/WZK/Scripts/QR_Code/zxing.unity.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

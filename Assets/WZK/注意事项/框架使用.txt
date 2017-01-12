@@ -7,3 +7,5 @@
 屏幕打印信息 ScreenPrinter
 
 更改打包的Resource资源 BuildAndroidPlayer
+
+AnalyticsUtility.Event(_key[12]);友盟统计
